@@ -25,26 +25,26 @@ function App() {
           <p className="top-description">Loren ipsum dolor</p>
         </div>
         <div className="top-icon-description-container">
-          <img src={TopLogo} alt="" className="top-logo" />
+          <img src={TopLogo} alt="top logo" className="top-logo" />
           <p className="top-description">Loren ipsum dolor</p>
         </div>
         <div className="top-icon-description-container">
-          <img src={TopLogo} alt="" className="top-logo" />
+          <img src={TopLogo} alt="top logo" className="top-logo" />
           <p className="top-description">Loren ipsum dolor</p>
         </div>
       </div>
       <header className="header-container">
         <div className="header-first-container">
-          <img src={WebsiteLogo} alt="" className="website-logo" />
+          <img src={WebsiteLogo} alt="Website logo" className="website-logo" />
           <h1 className="website-heading">LOGO</h1>
           <div className="header-icons-container">
-            <img src={SearchIcon} alt="" className="header-icons"/>
-            <img src={HeartIcon} alt="" className="header-icons" />
-            <img src={ShoppingBagIcon} alt="" className="header-icons" />
-            <img src={ProfileIcon} alt="" className="header-icons"/>
+            <img src={SearchIcon} alt="search icon" className="header-icons"/>
+            <img src={HeartIcon} alt="Heart Icon" className="header-icons" />
+            <img src={ShoppingBagIcon} alt="Shopping Bag" className="header-icons" />
+            <img src={ProfileIcon} alt="Profile" className="header-icons"/>
             <div className="language-filter-container">
-              <img src={EngIcon} alt="" className="header-icons"/>
-              <img src={BottomArrowIcon} alt="" className="header-icons" />
+              <img src={EngIcon} alt="Eng Icon" className="header-icons"/>
+              <img src={BottomArrowIcon} alt="Bottom Arrow" className="header-icons" />
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ function App() {
             3425 ITEMS
           </p>
           <div className="filter-status-container">
-            {isSidebarVisible ? <img src={LeftArrowIcon} alt="" /> : <img src={RightArrowIcon} alt=''/> } 
+            {isSidebarVisible ? <img src={LeftArrowIcon} alt="Left Arrrow" /> : <img src={RightArrowIcon} alt=''/> } 
             <button className='toggle-button' onClick={toggleSidebar}>{isSidebarVisible ? 'HIDE FILTER' : 'SHOW FILTER'}</button>
           </div>
         </div>
