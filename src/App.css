@@ -1,38 +1,316 @@
-.App {
-  text-align: center;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure the body doesn't exceed viewport width */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appscrip-main-container {
+  background: rgba(255, 255, 255, 1);
+  height: 100%;
+  gap: 0px;
+  opacity: 0px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-header-container {
+  width: Fixed (1,440px)px;
+  height: Hug (52px)px;
+  padding: 8px 274px;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0px;
+  background: rgba(0, 0, 0, 1);
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-icon-description-container {
+  display: flex;
+ 
+  gap: 10px;
+
+
+}
+
+.top-logo {
+  width: 16px;
+  height: 16px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.top-description {
+  font-family: Simplon Norm;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: rgba(235, 76, 107, 1);
+  margin: 0;
+
+}
+
+.header-top-container {
+  width: Fixed (1,440px)px;
+  height: Hug (32px)px;
+  padding: 8px 274px 8px 274px;
+  gap: 0px;
+  justify-content: space-between;
+  opacity: 0px;
+  background: rgba(0, 0, 0, 1);
+}
+
+.header-top-content {
+  width: Hug (138px)px;
+  height: Hug (16px)px;
+  gap: 10px;
+  opacity: 0px;
+
+}
+.header-container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px -2px black;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.header-first-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+ 
+}
+
+.header-nav-container {
+  display: flex;
+  align-self: center;
+  gap: 34px;
+
+}
+
+
+
+.website-logo {
+  width: 35.61px;
+  height: 35.66px;
+  margin-top: 5px;
+  
+}
+
+.website-heading {
+  width: 107px;
+  height: 44px;
+  margin-top: 0;
+
+}
+
+.header-icons-container {
+  display: flex;
+  margin-top: 10px;
+  gap: 24px;
+
+}
+
+.header-icons {
+  width: 24px;
+  height: 24px;
+
+}
+
+.language-filter-container {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-options {
+  height: 14px;
+  font-family: Simplon Norm;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(37, 32, 32, 1);
+
+}
+
+.website-caption-description-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.website-caption {
+  font-family: Simplon Norm;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(37, 32, 32, 1);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.website-description {
+  font-family: Simplon Norm;
+font-size: 22px;
+font-weight: 400;
+line-height: 40px;
+text-align: center;
+color: rgba(37, 32, 32, 1);
+
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+.filter-recommandations-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 68px;
+  top: 532px;
+  left: 96px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+
+}
+
+.filter-items-count-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 300px;
+}
+
+.items-count {
+  font-weight: bold;
+}
+
+.filter-status-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.toggle-button {
+  text-decoration: underline;
+  font-family: Adobe Caslon Pro;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: rgba(136, 135, 146, 1);
+  border: 0;
+  cursor: pointer;
+
+}
+
+#sort-options {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Make the selected option bold */
+#sort-options option:checked,
+#sort-options option[selected] {
+  font-weight: bold;
+}
+
+/* Optionally, style the dropdown on hover */
+#sort-options:hover {
+  border-color: #888;
+}
+
+
+.content-container {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar {
+  width: 300px;
+  background: rgba(255, 255, 255, 1);
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  margin: auto;
+}
+
+.sidebar.hidden {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.customizble-container {
+  display: flex;
+  align-self: self-start ;
+  gap: 2px;
+}
+
+.customizble-des {
+  font-weight: bold;
+}
+
+.filter-container {
+  width: 250px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.filter-option {
+  margin-bottom: 10px;
+}
+
+.filter-option label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-option select {
+  width: 100%;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5" stroke="%23333" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-option select:focus {
+  outline: none;
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+.product-listing {
+  flex: 1;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-listing.wide {
+  flex-basis: 100%;
+}
+
+.product-listing.narrow {
+  flex-basis: calc(100% - 300px);
 }
