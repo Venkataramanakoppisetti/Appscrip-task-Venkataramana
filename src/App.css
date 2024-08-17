@@ -13,8 +13,8 @@ html, body {
 }
 
 .top-header-container {
-  width: 1440px;
-  height: 52px;
+  width: Fixed (1,440px)px;
+  height: Hug (52px)px;
   padding: 8px 274px;
   display: flex;
   justify-content: space-around;
@@ -26,7 +26,10 @@ html, body {
 
 .top-icon-description-container {
   display: flex;
+ 
   gap: 10px;
+
+
 }
 
 .top-logo {
@@ -48,8 +51,8 @@ html, body {
 }
 
 .header-top-container {
-  width: 1440px;
-  height: 32px;
+  width: Fixed (1,440px)px;
+  height: Hug (32px)px;
   padding: 8px 274px 8px 274px;
   gap: 0px;
   justify-content: space-between;
@@ -58,8 +61,8 @@ html, body {
 }
 
 .header-top-content {
-  width: 138px;
-  height: 16px;
+  width: Hug (138px)px;
+  height: Hug (16px)px;
   gap: 10px;
   opacity: 0px;
 
